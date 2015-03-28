@@ -1,14 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
 
-    <title>R7 FrontEnd Test</title>
+	<title>R7 FrontEnd Test</title>
 
-    <link rel="stylesheet" href="stylesheets/css/style.css" media="all">
-  </head>
-  <body>
-      <!-- let's code :D -->
+	<link rel="stylesheet" href="stylesheets/css/style.css" media="all">
+</head>
+<body>
+	<section class="container">
+		<header>
+			<div class="ranking">
+				<div class="logo"></div>
+				<p>RANKING</p>
+			</div>
+		</header>
+	</section>
 
-    <script src="javascripts/main.js"></script> 
+	<script id="rankTemplate" type="text/template">
+	    <div class="rank-image">
+	      <div class="position"><%= position %></div>
+	    </div>
+	    <p class="title"><%= name %></p>
+	    <p class="subtitle"><%= description %></p>
+	    <div class="tooltip" id="<%= __id %>">
+	      <table border="0" cellspacing="0" cellpadding="5px">
+	        <tr class="table-title">
+	          <td>Gostam</td>
+	          <td>Não gostam</td>
+	        </tr>
+	        <tr class="table-content">
+	          <td><p><%= perc_positive %>%</p></td>
+	          <td><p><%= perc_negative %>%</p></td>
+	        </tr>
+	      </table>
+	    </div>
+	</script>
+	<script src="components/jquery/dist/jquery.min.js"></script>
+	<script src="components/underscore/underscore-min.js"></script>
+	<script src="components/backbone/backbone.js"></script>
+	<script src="javascripts/main.js"></script> 
+</body>
 </html>
