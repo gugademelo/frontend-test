@@ -45,11 +45,11 @@ var RankItemView = Backbone.View.extend({
 	},
 
 	showToolTip: function(){
-		$('#'+this.model.get('__id')).fadeIn(200);
+		$('#'+this.model.get('__id')).fadeIn(50);
 	},
 
 	hideToolTip: function(){
-		$('#'+this.model.get('__id')).fadeOut(200);
+		$('#'+this.model.get('__id')).fadeOut(50);
 	}
 });
 
