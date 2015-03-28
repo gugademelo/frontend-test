@@ -1,6 +1,6 @@
 /node_modules
 npm-debug.log
 *.swp
-bower_components/
+public/components/
 .sass-cache/
 public/stylesheets/css
