@@ -14,7 +14,7 @@
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
   &:hover {
-    background-color: #ba3638;
+    background-color: $red;
     .subtitle {
       color: #272727;
     }
@@ -34,13 +34,13 @@
     background-position: center;
     background-size: 80px;
     background-repeat: no-repeat;
-    border: 5px solid #ba3638;
+    border: 5px solid $red;
   }
   .position {
     width: 25px;
     height: 25px;
     text-align: center;
-    color: #909090;
+    color: $gray_font;
     font-weight: 700;
     font-size: 17px;
     position: absolute;
@@ -56,14 +56,14 @@
   .title {
     font-size: 16px;
     font-weight: 700;
-    color: #ba3638;
+    color: $red;
     margin-top: 10px;
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s;
   }
   .subtitle {
-    color: #909090;
+    color: $gray_font;
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s;
@@ -71,7 +71,7 @@
 }
 
 .even {
-  background-color: #f2f1f1;
+  background-color: $gray;
 }
 
 .first {
