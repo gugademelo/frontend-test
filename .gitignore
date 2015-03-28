@@ -2,3 +2,5 @@
 npm-debug.log
 *.swp
 bower_components/
+.sass-cache/
+public/stylesheets/css
