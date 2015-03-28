@@ -1,0 +1,25 @@
+.tooltip {
+  position: absolute;
+  right: -180px;
+  top: 12%;
+  background-color: white;
+  display: none;
+  text-align: center;
+  border-radius: 10px;
+  .table-title {
+    font-size: 14px;
+    background-color: #ba3638;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .table-content {
+    font-size: 18px;
+    border-radius: 10px;
+    p {
+      margin: 0;
+      font-weight: 700;
+      color: #909090;
+    }
+  }
+}
