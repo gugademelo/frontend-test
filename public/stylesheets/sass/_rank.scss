@@ -26,28 +26,31 @@
     }
   }
   .rank-image {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 100px;
     float: left;
-    position: relative;
+    position: absolute;
     background-position: center;
     background-size: 80px;
     background-repeat: no-repeat;
     border: 5px solid $red;
+    top: 11px;
   }
   .position {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     text-align: center;
     color: $gray_font;
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: bold;
+    font-size: 13px;
     position: absolute;
-    bottom: -10px;
+    bottom: -6px;
     left: 40px;
     background-color: #f4f3f3;
     border-radius: 100px;
+    border: 1px solid $gray_font;
+    line-height: 1.5;
   }
   .title, .subtitle {
     margin: 0;
