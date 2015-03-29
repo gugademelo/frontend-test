@@ -42,7 +42,7 @@
     width: 20px;
     height: 20px;
     text-align: center;
-    color: $gray_font;
+    color: $dark_gray_font;
     font-weight: bold;
     font-size: 13px;
     position: absolute;
@@ -50,7 +50,7 @@
     left: 58px;
     background-color: #f4f3f3;
     @include cb(border-radius, 100px);
-    border: 1px solid $gray_font;
+    border: 1px solid $dark_gray_font;
     line-height: 1.5;
   }
   .title, .subtitle {
@@ -58,8 +58,7 @@
     margin-left: 80px;
   }
   .title {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 17px;
     color: $red;
     margin-top: 10px;
     @include cb(transition, color 0.5s);
