@@ -32,13 +32,11 @@
 				font-weight: bold;
 			}
 			td.left {
-				border-radius: 5px 0 0 0;
-				-moz-border-radius: 5px 0 0 0;
+				@include cb(border-radius, 5px 0 0 0);
 				border-right: 1px solid rgba(0,0,0,0.3);
 			}
 			td.right {
-				border-radius: 0 5px 0 0;
-				-moz-border-radius: 0 5px 0 0;
+				@include cb(border-radius, 0 5px 0 0);
 				border-left: 1px solid rgba(255,255,255,0.3);
 			}
 		}
@@ -50,13 +48,11 @@
 				background-color: #fff;
 			}
 			td.left {
-				border-radius: 0 0 0 5px;
-				-moz-border-radius: 0 0 0 5px;
-				border-right: 1px solid rgba(0,0,0,0.4);
+				@include cb(border-radius, 0 0 0 5px);
+				border-right: 1px solid rgba(0,0,0,0.3);
 			}
 			td.right {
-				border-radius: 0 0 5px 0;
-				-moz-border-radius: 0 0 5px 0;		    	
+				@include cb(border-radius, 0 0 5px 0);		    	
 			}
 			p {
 				margin: 0;

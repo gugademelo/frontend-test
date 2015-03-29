@@ -10,9 +10,7 @@
   text-align: left;
   height: 60px;
   list-style: none;
-  -webkit-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  transition: background-color 0.25s;
+  @include cb(transition, background-color 0.25s);
   &:hover {
     background-color: $red;
     .subtitle {
@@ -51,7 +49,7 @@
     bottom: 7px;
     left: 58px;
     background-color: #f4f3f3;
-    border-radius: 100px;
+    @include cb(border-radius, 100px);
     border: 1px solid $gray_font;
     line-height: 1.5;
   }
@@ -64,15 +62,11 @@
     font-weight: 700;
     color: $red;
     margin-top: 10px;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
-    transition: color 0.5s;
+    @include cb(transition, color 0.5s);
   }
   .subtitle {
     color: $gray_font;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
-    transition: color 0.5s;
+    @include cb(transition, color 0.5s);
   }
 }
 
