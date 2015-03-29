@@ -28,14 +28,17 @@
   .rank-image {
     width: 55px;
     height: 55px;
-    border-radius: 100px;
+    @include cb(border-radius, 100px);
     float: left;
     position: absolute;
-    background-position: center;
-    background-size: 80px;
-    background-repeat: no-repeat;
     border: 5px solid $red;
-    top: 11px;
+    overflow: hidden;
+    background-position: center 10%;
+    img {
+      position: absolute;
+      left: -12px;
+      top: -3px;
+    }
   }
   .position {
     width: 20px;
@@ -45,8 +48,8 @@
     font-weight: bold;
     font-size: 13px;
     position: absolute;
-    bottom: -6px;
-    left: 40px;
+    bottom: 7px;
+    left: 58px;
     background-color: #f4f3f3;
     border-radius: 100px;
     border: 1px solid $gray_font;

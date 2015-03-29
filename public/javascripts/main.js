@@ -7,11 +7,11 @@ var RankItemModel = Backbone.Model.extend({
 });
 
 var RankItemCollection = Backbone.Collection.extend({
-	model:RankItemModel,
+	model: RankItemModel,
 	url: 'fazenda.json',
 
 	//ordena pelo percentual de positivos DESC
-	comparator: function(item) {
+	comparator: function (item) {
 		return -item.get('perc_positive');
 	},
 
@@ -36,12 +36,11 @@ var RankItemView = Backbone.View.extend({
 		this.$el.html( this.template(this.model.toJSON()));
 
 		//adiciona algumas classes nos itens para zebrar a lista, adicionar border-radius, etc
-		if (this.model.get('first')) this.$el.addClass('first');
-		if (this.model.get('last')) this.$el.addClass('last');
-		if (this.model.get('even')) this.$el.addClass('even');
-		//adiiona a imagem do item direto no elemento
-		this.$el.children('.rank-image').css({"background-image":"url("+ this.model.get("picture") +")"});
-		return this
+		if (this.model.get('first')) { this.$el.addClass('first') }
+		if (this.model.get('last')) { this.$el.addClass('last') }
+		if (this.model.get('even')) { this.$el.addClass('even') }
+
+		return this;
 	},
 
 	showToolTip: function(){

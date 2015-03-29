@@ -22,23 +22,24 @@
 	</section>
 
 	<script id="rankTemplate" type="text/template">
-	    <div class="rank-image">
-	      <div class="position"><%= position %></div>
-	    </div>
-	    <p class="title"><%= name %></p>
-	    <p class="subtitle"><%= description %></p>
-	    <div class="tooltip" id="<%= __id %>">
-	      <table border="0" cellspacing="0" cellpadding="5px">
-	        <tr class="table-title">
-	          <td class="left">Gostam</td>
-	          <td class="right">Não gostam</td>
-	        </tr>
-	        <tr class="table-content">
-	          <td class="left"><p><%= perc_positive %>%</p></td>
-	          <td class="right"><p><%= perc_negative %>%</p></td>
-	        </tr>
-	      </table>
-	    </div>
+		<div class="rank-image">
+			<img src="<%= picture %>" height="60" background-position="100px 100px">
+		</div>
+		<div class="position"><%= position %></div>
+		<p class="title"><%= name %></p>
+		<p class="subtitle"><%= description %></p>
+		<div class="tooltip" id="<%= __id %>">
+			<table border="0" cellspacing="0" cellpadding="5px">
+				<tr class="table-title">
+					<td class="left">Gostam</td>
+					<td class="right">Não gostam</td>
+				</tr>
+				<tr class="table-content">
+					<td class="left"><p><%= perc_positive %>%</p></td>
+					<td class="right"><p><%= perc_negative %>%</p></td>
+				</tr>
+			</table>
+		</div>
 	</script>
 	<script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="components/underscore/underscore-min.js"></script>
