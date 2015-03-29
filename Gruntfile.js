@@ -9,10 +9,26 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		minified : {
+		  files: {
+		    src: [
+		    'public/javascripts/*.js'
+		    ],
+		    dest: 'public/javascripts/minified/'
+		  },
+		  options : {
+		    sourcemap: true,
+		    allinone: false
+		  }
+		},
 		watch: {
 			css: {
-				files: '**/*.scss',
+				files: 'public/stylesheets/sass/*.scss',
 				tasks: ['sass']
+			},
+			js: {
+				files: 'public/javascripts/*.js',
+				tasks: ['minified']
 			}
 		}
 	});
