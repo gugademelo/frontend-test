@@ -1,3 +1,20 @@
+### Como rodar o projeto
+Após clonar o repositorio, no branch gustavomelo, instale as dependencias do node
+
+	npm install
+
+Então, instale as dependecias do bower
+
+	bower install
+
+Por fim, compile o sass e minifique o js com o grunt, apenas digite
+
+	grunt
+
+Então rode a aplicação
+
+	npm start
+
 ### Sobre o R7.com
 R7.com, é um portal mantido pela Rádio e Televisão Record S/A, com quase
 5 anos de vida possui 50 milhões de visitantes únicos, e 1 bilhão e meio
