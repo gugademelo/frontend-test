@@ -4,3 +4,4 @@ npm-debug.log
 public/components/
 .sass-cache/
 public/stylesheets/css
+public/javascripts/minified
